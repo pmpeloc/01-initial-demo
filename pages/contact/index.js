@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import MainLayout from '../../components/layouts/MainLayout';
 
-const Contact = () => {
+const ContactPage = () => {
   return (
     <MainLayout>
       <h1>Contact Page</h1>
@@ -19,4 +19,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactPage;

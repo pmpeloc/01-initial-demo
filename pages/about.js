@@ -1,9 +1,10 @@
 import Link from 'next/link';
+import DarkLayout from '../components/layouts/DarkLayout';
 import MainLayout from '../components/layouts/MainLayout';
 
-const About = () => {
+const AboutPage = () => {
   return (
-    <MainLayout>
+    <>
       <h1>About Page</h1>
       <h1 className='title'>
         {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
@@ -16,8 +17,16 @@ const About = () => {
       <p className='description'>
         Get started by editing <code className='code'>pages/about.js</code>
       </p>
+    </>
+  );
+};
+
+AboutPage.getLayout = function getLayout(page) {
+  return (
+    <MainLayout>
+      <DarkLayout>{page}</DarkLayout>
     </MainLayout>
   );
 };
 
-export default About;
+export default AboutPage;

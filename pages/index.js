@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import MainLayout from '../components/layouts/MainLayout';
 
-const Home = () => {
+const HomePage = () => {
   return (
     <MainLayout>
       <h1>Home Page</h1>
@@ -19,4 +19,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;
