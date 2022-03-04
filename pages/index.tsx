@@ -19,7 +19,7 @@ const HomePage = () => {
   );
 };
 
-HomePage.getLayout = function getLayout(page) {
+HomePage.getLayout = function getLayout(page: any) {
   return <MainLayout>{page}</MainLayout>;
 };
 

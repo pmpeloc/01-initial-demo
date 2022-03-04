@@ -21,7 +21,7 @@ const AboutPage = () => {
   );
 };
 
-AboutPage.getLayout = function getLayout(page) {
+AboutPage.getLayout = function getLayout(page: any) {
   return (
     <MainLayout>
       <DarkLayout>{page}</DarkLayout>
