@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { ReactElement } from 'react';
 import MainLayout from '../components/layouts/MainLayout';
 
 const HomePage = () => {
@@ -19,7 +20,7 @@ const HomePage = () => {
   );
 };
 
-HomePage.getLayout = function getLayout(page: any) {
+HomePage.getLayout = function getLayout(page: ReactElement) {
   return <MainLayout>{page}</MainLayout>;
 };
 
