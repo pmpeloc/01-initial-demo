@@ -3,7 +3,7 @@ import MainLayout from '../../components/layouts/MainLayout';
 
 const ContactPage = () => {
   return (
-    <MainLayout>
+    <>
       <h1>Contact Page</h1>
       <h1 className='title'>
         {/* Ir a <a href='/about'>About</a> */}
@@ -15,8 +15,12 @@ const ContactPage = () => {
       <p className='description'>
         Get started by editing <code className='code'>pages/contact.js</code>
       </p>
-    </MainLayout>
+    </>
   );
+};
+
+ContactPage.getLayout = function getLayout(page) {
+  return <MainLayout>{page}</MainLayout>;
 };
 
 export default ContactPage;

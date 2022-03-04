@@ -1,7 +1,8 @@
 import Link from 'next/link';
-import MainLayout from '../components/layouts/MainLayout';
 
-const HomePage = () => {
+import MainLayout from '../../components/layouts/MainLayout';
+
+const PricingPage = () => {
   return (
     <>
       <h1>Home Page</h1>
@@ -19,8 +20,8 @@ const HomePage = () => {
   );
 };
 
-HomePage.getLayout = function getLayout(page) {
+PricingPage.getLayout = function getLayout(page) {
   return <MainLayout>{page}</MainLayout>;
 };
 
-export default HomePage;
+export default PricingPage;
